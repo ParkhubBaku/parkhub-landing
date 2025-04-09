@@ -26,7 +26,7 @@
           { "pattern": "pages/**", "group": "internal" },
           { "pattern": "views/**", "group": "internal" },
           { "pattern": "utils/**", "group": "internal" },
-          { "pattern": "public/**", "group": "internal", "position": "after" },
+          { "pattern": "src/**", "group": "internal", "position": "after" },
           { "pattern": "posts/**", "group": "internal", "position": "after" }
         ],
         "pathGroupsExcludedImportTypes": ["internal"],
