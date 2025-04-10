@@ -25,7 +25,7 @@ const FAQ = () => {
   return (
     <section
       id="faq"
-      className="py-16 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900 bg-white transition-colors duration-300"
+      className="py-16 dark:bg-black bg-white transition-colors duration-300"
       style={{ backgroundImage: `url(${dots})`, backgroundRepeat: 'repeat', backgroundSize: 'auto' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@ const FAQ = () => {
               <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-2">
                 {t('What is PARK HUB BAKU?')}
               </h3>
-              <p className="dark:text-gray-200 text-gray-700">
+              <p className="dark:text-gray-300 text-gray-700">
                 {t('PARK HUB BAKU is a unified parking subscription service that allows you to access multiple parking locations in Baku with a single plan.')}
               </p>
             </div>
@@ -56,7 +56,7 @@ const FAQ = () => {
               <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-2">
                 {t('How do I choose a subscription plan?')}
               </h3>
-              <p className="dark:text-gray-200 text-gray-700">
+              <p className="dark:text-gray-300 text-gray-700">
                 {t('We offer three plans: Office Employees (120 AZN/month), Daily Parking Users (180 AZN/month), and Maximum Plan (240 AZN/month). Choose the one that fits your parking needs.')}
               </p>
             </div>
@@ -67,7 +67,7 @@ const FAQ = () => {
               <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-2">
                 {t('Can I use PARK HUB BAKU at any parking lot in Baku?')}
               </h3>
-              <p className="dark:text-gray-200 text-gray-700">
+              <p className="dark:text-gray-300 text-gray-700">
                 {t('Yes, our subscription plans give you access to all partner parking locations across Baku, including offices, malls, and residential areas.')}
               </p>
             </div>
@@ -78,7 +78,7 @@ const FAQ = () => {
               <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-2">
                 {t('How do I pay for my subscription?')}
               </h3>
-              <p className="dark:text-gray-200 text-gray-700">
+              <p className="dark:text-gray-300 text-gray-700">
                 {t('Payments will be available through our app using PASHA Bank Pay by Link for the initial launch, with more options coming soon.')}
               </p>
             </div>

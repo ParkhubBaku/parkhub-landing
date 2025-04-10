@@ -8,7 +8,7 @@ import gbFlag from '../assets/images/flags/gb.svg';
 import azFlag from '../assets/images/flags/az.svg';
 import ruFlag from '../assets/images/flags/ru.svg';
 
-const Header = ({ isDarkMode, toggleTheme }) => {
+const Header = ({ isDarkMode, toggleDarkMode }) => { // Changed toggleTheme to toggleDarkMode
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -66,7 +66,7 @@ const Header = ({ isDarkMode, toggleTheme }) => {
             {t('Get Started')}
           </a>
           <button
-            onClick={toggleTheme}
+            onClick={toggleDarkMode} // Changed from toggleTheme to toggleDarkMode
             className="p-2 rounded-full dark:bg-gray-700 bg-gray-200 dark:text-white text-gray-900 focus:outline-none"
           >
             <i className={isDarkMode ? 'bi bi-sun-fill' : 'bi bi-moon-fill'}></i>
@@ -98,7 +98,7 @@ const Header = ({ isDarkMode, toggleTheme }) => {
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center gap-2">
           <button
-            onClick={toggleTheme}
+            onClick={toggleDarkMode} // Changed from toggleTheme to toggleDarkMode
             className="p-2 rounded-full dark:bg-gray-700 bg-gray-200 dark:text-white text-gray-900 focus:outline-none"
           >
             <i className={isDarkMode ? 'bi bi-sun-fill' : 'bi bi-moon-fill'}></i>

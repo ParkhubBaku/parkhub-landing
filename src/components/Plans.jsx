@@ -24,7 +24,7 @@ const Plans = () => {
 
   return (
     <section
-      id="plans"
+      id="pricing" // Changed from id="plans" to id="pricing"
       className="py-16 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900 bg-gray-100 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

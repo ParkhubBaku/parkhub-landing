@@ -8,7 +8,7 @@ import HowItWorks from './components/HowItWorks';
 import Features from './components/Features';
 import Team from './components/Team';
 import Plans from './components/Plans';
-import Testimonials from './components/Testimonials'; // Import the new component
+import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import CTA from './components/CTA';
@@ -20,11 +20,12 @@ function App() {
 
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode');
-    if (savedMode) {
-      setIsDarkMode(JSON.parse(savedMode));
-      if (JSON.parse(savedMode)) {
-        document.documentElement.classList.add('dark');
-      }
+    const isDark = savedMode ? JSON.parse(savedMode) : false; // Default to false if no saved mode
+    setIsDarkMode(isDark);
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
 
     const savedLang = localStorage.getItem('language');
@@ -33,15 +34,18 @@ function App() {
     }
   }, [i18n]);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
+  useEffect(() => {
+    // Sync the dark class with isDarkMode state whenever it changes
+    if (isDarkMode) {
       document.documentElement.classList.add('dark');
-      localStorage.setItem('darkMode', true);
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('darkMode', false);
     }
+    localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
   const changeLanguage = (lang) => {
@@ -63,7 +67,7 @@ function App() {
         <Features isDarkMode={isDarkMode} />
         <Team />
         <Plans />
-        <Testimonials /> {/* Add the new section */}
+        <Testimonials />
         <FAQ />
         <Contact />
         <CTA />
