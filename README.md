@@ -178,3 +178,72 @@ This README file includes step-by-step commands and explanations for all key are
 
 
 
+
+
+
+
+
+
+
+
+_______________
+Step 1: Git Commands to Save the Current Status
+I recall from our conversation on April 10, 2025, when we worked on your chat application and deployed it to GitHub, that we used Git commands to save the project state. We followed a similar process for parkhub-landing in earlier steps. Here are the Git commands we used to save the current state of your project:
+
+Stage All Changes:
+bash
+
+Copy
+git add .
+This stages all modified and new files in the parkhub-landing directory, including the updated Contact.tsx.
+Commit the Changes:
+bash
+
+Copy
+git commit -m "Add email sending functionality to Contact form"
+This commits the changes with a descriptive message. Adjust the message if needed.
+Push to GitHub (if you have a remote repository set up): Assuming you’ve set up a GitHub repository (e.g., parkhub-landing), push the changes:
+bash
+
+Copy
+git push origin main
+If your default branch is master instead of main, replace main with master. If you don’t have a remote repository yet, you can create one on GitHub and set it up with:
+bash
+
+Copy
+git remote add origin https://github.com/your-username/parkhub-landing.git
+git branch -M main
+git push -u origin main
+These commands ensure your current project state is saved locally (and optionally on GitHub if you have a remote repository).
+
+Step 2: GCloud Commands to Deploy to Cloud Run
+I recall from our recent conversation (April 19, 2025) that we deployed the parkhub-landing app to Cloud Run, and you confirmed it’s working well. We’ll follow the same deployment process to update the app with the new email functionality.
+
+2.1 Build the Updated Docker Image
+Since you already have a Dockerfile (as confirmed earlier), build the updated Docker image:
+
+bash
+
+Copy
+docker build -t parkhub-landing:latest .
+2.2 Tag and Push to Artifact Registry
+Tag the image for GCP Artifact Registry (replace your-region and your-project-id with your actual values, e.g., us-central1 and your GCP project ID):
+
+bash
+
+Copy
+docker tag parkhub-landing:latest your-region-docker.pkg.dev/your-project-id/parkhub-repo/parkhub-landing:latest
+docker push your-region-docker.pkg.dev/your-project-id/parkhub-repo/parkhub-landing:latest
+2.3 Redeploy to Cloud Run
+Deploy the updated image to Cloud Run:
+
+bash
+
+Copy
+gcloud run deploy parkhub-landing-service \
+  --image your-region-docker.pkg.dev/your-project-id/parkhub-repo/parkhub-landing:latest \
+  --platform managed \
+  --region your-region \
+  --port 80 \
+  --allow-unauthenticated
+This updates the existing parkhub-landing-service on Cloud Run with the new version of your app. The --port 80 matches the port exposed in your Dockerfile, and --allow-unauthenticated ensures public access (you can restrict this later if needed).

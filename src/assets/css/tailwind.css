@@ -8,6 +8,24 @@
 @layer base {
   html {
     font-family: 'Ubuntu', sans-serif;
-    scroll-behavior: smooth; /* Previously added for Pricing link smooth scrolling */
+    scroll-behavior: smooth;
+  }
+
+  /* Style for details/summary to match the previous accordion look */
+  details > summary {
+    list-style: none;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] > summary .bi-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  details > summary .bi-chevron-down {
+    transition: transform 0.3s ease;
   }
 }

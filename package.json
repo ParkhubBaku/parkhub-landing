@@ -7,7 +7,11 @@
     "start": "vite",
     "build": "vite build",
     "start:tailwind": "cross-env NODE_ENV=development tailwindcss --postcss -i src/assets/css/tailwind.css -o src/assets/css/tailwind-build.css -w",
-    "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i src/assets/css/tailwind.css -o src/assets/css/tailwind-build.css --minify"
+    "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i src/assets/css/tailwind.css -o src/assets/css/tailwind-build.css --minify",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "keywords": [
     "landing",
@@ -19,9 +23,7 @@
   "author": "Paul",
   "license": "MIT",
   "dependencies": {
-    "@gsap/react": "^2.1.0",
     "framer-motion": "^12.6.3",
-    "gsap": "^3.12.0",
     "i18next": "^24.2.3",
     "i18next-browser-languagedetector": "^8.0.4",
     "postcss": "^8.4.33",
@@ -33,9 +35,35 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
-    "vite": "^6.2.5"
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "vite": "^6.2.5",
+    "vitest": "^3.1.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
