@@ -1,0 +1,7 @@
+runtime: nodejs20
+instance_class: F1
+
+env_variables:
+  EMAIL_USER: "parkhub.notifications@gmail.com"
+  EMAIL_PASS: "cfewpiupoonfepnt"
+  PORT: 8080

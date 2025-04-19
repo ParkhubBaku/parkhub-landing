@@ -7,24 +7,24 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: t('What is PARK HUB?'),
-      answer: t('PARK HUB is a subscription-based parking app...'),
+      question: t('FAQ_What is PARK HUB?'),
+      answer: t('FAQ_PARK HUB is a subscription-based parking app...'),
     },
     {
-      question: t('How do I choose a plan?'),
-      answer: t('You can choose a plan directly in the app...'),
+      question: t('FAQ_How do I choose a plan?'),
+      answer: t('FAQ_You can choose a plan directly in the app...'),
     },
     {
-      question: t('Can I cancel my subscription?'),
-      answer: t('Yes, you can cancel your subscription at any time...'),
+      question: t('FAQ_Can I cancel my subscription?'),
+      answer: t('FAQ_Yes, you can cancel your subscription at any time...'),
     },
     {
-      question: t('What payment methods are accepted?'),
-      answer: t('We accept all major credit cards...'),
+      question: t('FAQ_What payment methods are accepted?'),
+      answer: t('FAQ_We accept all major credit cards...'),
     },
     {
-      question: t('Is there a free trial?'),
-      answer: t('Yes, we offer a 7-day free trial...'),
+      question: t('FAQ_Is there a free trial?'),
+      answer: t('FAQ_Yes, we offer a 7-day free trial...'),
     },
   ];
 

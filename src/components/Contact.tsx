@@ -7,6 +7,8 @@ const Contact: React.FC = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({ name: '', email: '', message: '' });
+  const [successMessage, setSuccessMessage] = useState('');
+  const [submitError, setSubmitError] = useState('');
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -27,6 +29,8 @@ const Contact: React.FC = () => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
     setErrors((prev) => ({ ...prev, [id]: '' }));
+    setSuccessMessage('');
+    setSubmitError('');
   };
 
   const validateForm = () => {
@@ -53,12 +57,34 @@ const Contact: React.FC = () => {
     return isValid;
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log('Form submitted:', formData);
-      // Add form submission logic here (e.g., API call)
+    setSuccessMessage('');
+    setSubmitError('');
+  
+    if (!validateForm()) {
+      return;
+    }
+  
+    try {
+      const response = await fetch('https://parkhub-456312.appspot.com/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+  
+      const result = await response.json();
+      setSuccessMessage(t('Message sent successfully!'));
       setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      setSubmitError(t('Failed to send message. Please try again later.'));
+      console.error('Error submitting form:', error);
     }
   };
 
@@ -82,13 +108,13 @@ const Contact: React.FC = () => {
             <h3 className="text-xl font-semibold dark:text-white text-gray-900 mb-4">
               {t('Get in Touch')}
             </h3>
-           <img src={phone3} alt="ParkHub App on Phone Screen" className="w-full max-w-sm rounded-lg shadow-lg " loading="lazy" /> 8?
+            <img src={phone3} alt="ParkHub App on Phone Screen" className="w-full max-w-sm rounded-lg shadow-lg" loading="lazy" />
             <p className="dark:text-gray-200 text-gray-700 mb-4 text-center">
               {t('Have questions or need support? Reach out to us!')}
             </p>
             <p className="dark:text-gray-200 text-gray-700 flex items-center">
               <i className="bi bi-envelope text-2xl dark:text-[#1653ff] text-gray-700 mr-2" aria-hidden="true"></i>
-              <span className="sr-only">{t('Email')}:</span> info@parkhubbaku@gmail.com
+              <span className="sr-only">{t('Email')}:</span> parkhubbaku@gmail.com
             </p>
             <p className="dark:text-gray-200 text-gray-700 flex items-center">
               <i className="bi bi-telephone text-2xl dark:text-[#1653ff] text-gray-700 mr-2" aria-hidden="true"></i>
@@ -96,7 +122,7 @@ const Contact: React.FC = () => {
             </p>
             <p className="dark:text-gray-200 text-gray-700 flex items-center">
               <i className="bi bi-geo-alt text-2xl dark:text-[#1653ff] text-gray-700 mr-2" aria-hidden="true"></i>
-              <span className="sr-only">{t('Address')}:</span> Port Baku 153,  Neftçilər prospekti, AZ 1010, Bakı, Azərbaycan
+              <span className="sr-only">{t('Address')}:</span> Port Baku 153, Neftçilər prospekti, AZ 1010, Bakı, Azərbaycan
             </p>
           </motion.div>
           <motion.div variants={itemVariants}>
@@ -104,6 +130,16 @@ const Contact: React.FC = () => {
               {t('Send a Message')}
             </h3>
             <form className="space-y-4" onSubmit={handleSubmit} noValidate>
+              {successMessage && (
+                <p className="text-green-500 text-sm" role="alert">
+                  {successMessage}
+                </p>
+              )}
+              {submitError && (
+                <p className="text-red-500 text-sm" role="alert">
+                  {submitError}
+                </p>
+              )}
               <div>
                 <label htmlFor="name" className="block dark:text-gray-200 text-gray-700">
                   {t('Name')}
