@@ -99,14 +99,14 @@ const Footer = () => {
               */}
             </div>
           </div>
-          <div className="flex justify-center space-x-10">
+          {/* <div className="flex justify-center space-x-10">
               <img
                 src={kickbox}
                 alt="Kickbox Pasha Holding Logo"
                 className="h-8"
                 loading="lazy"
               />
-            </div>
+            </div> */}
           <p className="dark:text-gray-200 text-gray-700">
             © 2025 PARK HUB BAKU. All rights reserved.
           </p>

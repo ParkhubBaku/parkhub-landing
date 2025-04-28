@@ -27,7 +27,7 @@ const Testimonials = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center dark:text-white text-gray-900 mb-12">
-          {t('What Our Users Say')}
+          {t('What Our Market Say')}
         </h2>
 
         {/* four‑column grid on md+ */}
@@ -46,9 +46,9 @@ const Testimonials = () => {
             transition={{ duration: 0.3 }}
           >
             <p className="dark:text-gray-200 text-gray-600 mb-6">
-              {t(
+            <q>{t(
                 'We pay 80 AZN per employee for parking, likely rising to 180 AZN.'
-              )}
+              )}</q>
             </p>
             <div className="flex justify-center">
               <img
@@ -68,9 +68,9 @@ const Testimonials = () => {
             transition={{ duration: 0.3 }}
           >
             <p className="dark:text-gray-200 text-gray-600 mb-6">
-              {t(
+            <q>{t(
                 'The most parking slots are free till 4PM, but operational costs are the same.'
-              )}
+              )}</q>
             </p>
             <div className="flex justify-center">
               <img
@@ -91,9 +91,9 @@ const Testimonials = () => {
             transition={{ duration: 0.3 }}
           >
             <p className="dark:text-gray-200 text-gray-600 text-center">
-              {t(
+              <q>{t(
                 "Payment delays are an issue—customers get stuck waiting for bank confirmation."
-              )}
+              )}</q>
             </p>
             <img
               src={garage}
@@ -109,10 +109,10 @@ const Testimonials = () => {
             className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md 
              flex flex-col items-center justify-center space-y-4"
             >
-            <p className="dark:text-gray-200 text-gray-600 text-center">
-              {t(
+            <p className="dark:text-text-200 text-gray-600 text-center">
+            <q> {t(
                 "Only 12 reserved employee parking spots remain; unsure what to do once they're gone."
-              )}
+              )}</q>
             </p>
             <img
               src={life}

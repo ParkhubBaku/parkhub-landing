@@ -120,7 +120,7 @@
   "Select a subscription plan that fits your parking needs—Office, Daily, or Maximum.": "Park ehtiyaclarınıza uyğun abunə planını seçin—Ofis, Gündəlik və ya Maksimum.",
   "Park Anywhere": "Hər Yerdə Park Et",
   "Use the app to find and access any partner parking location in Baku with ease.": "Tətbiqdən istifadə edərək Bakıdakı istənilən tərəfdaş park yerini asanlıqla tapın və daxil olun.",
-  "What Our Users Say": "İstifadəçilərimiz Nə Deyir",
+  "What Our Market Say": "Bazarımız Nə Deyir",
   "ParkHub has made parking in Baku so easy! I no longer waste time searching for a spot, and the subscription saves me money every month.": "ParkHub Bakıda park etməyi çox asanlaşdırdı! Artıq yer axtarmağa vaxt sərf etmirəm və abunəlik hər ay mənə pul qənaət edir.",
   "Aydin Mammadov": "Aydin Mammadov",
   "Daily Driver": "Gündəlik Sürücü",
@@ -129,5 +129,9 @@
   "Business Owner": "Biznes Sahibi",
   "Partnering with ParkHub increased our parking lot occupancy by 30%. Their app makes payments seamless, and we’ve reduced operational headaches.": "ParkHub ilə tərəfdaşlıq park yerimizin doluluq səviyyəsini 30% artırdı. Tətbiqləri ödənişləri asanlaşdırır və əməliyyat çətinliklərimizi azaltdıq.",
   "Ramin Hasanov": "Ramin Həsənov",
-  "Parking Operator": "Park Operatoru"
+  "Parking Operator": "Park Operatoru",
+  "We pay 80 AZN per employee for parking, likely rising to 180 AZN.": "Biz park etməyə görə işçi başına 80 AZN ödəyirik, ehtimal ki, 180 AZN-ə qalxacaq.",
+  "The most parking slots are free till 4PM, but operational costs are the same.": "Ən çox park yerləri saat 16:00-a qədər boşdur, lakin əməliyyat xərcləri eynidir.",
+  "Payment delays are an issue—customers get stuck waiting for bank confirmation.": "Ödəniş gecikmələri problem yaradır—müştərilər bank təsdiqi üçün gözləməyə məcbur olurlar.",  
+  "Only 12 reserved employee parking spots remain; unsure what to do once they're gone.": "Yalnız 12 rezerv edilmiş işçi park yeri qalıb; onlar bitəndən sonra nə edəcəyimizdən əmin deyilik."
 }

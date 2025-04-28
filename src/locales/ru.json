@@ -120,7 +120,7 @@
   "Select a subscription plan that fits your parking needs—Office, Daily, or Maximum.": "Выберите план подписки, который соответствует вашим потребностям в парковке — Офис, Ежедневный или Максимальный.",
   "Park Anywhere": "Паркуйтесь где угодно",
   "Use the app to find and access any partner parking location in Baku with ease.": "Используйте приложение, чтобы легко найти и получить доступ к любому партнерскому парковочному месту в Баку.",
-  "What Our Users Say": "Что говорят наши пользователи",
+  "What Our Market Say": "Что говорит наш рынок",
   "ParkHub has made parking in Baku so easy! I no longer waste time searching for a spot, and the subscription saves me money every month.": "ParkHub сделал парковку в Баку такой простой! Я больше не трачу время на поиск места, а подписка экономит мне деньги каждый месяц.",
   "Aydin Mammadov": "Айдын Мамедов",
   "Daily Driver": "Ежедневный водитель",
@@ -129,5 +129,10 @@
   "Business Owner": "Владелец бизнеса",
   "Partnering with ParkHub increased our parking lot occupancy by 30%. Their app makes payments seamless, and we’ve reduced operational headaches.": "Сотрудничество с ParkHub увеличило заполняемость нашей парковки на 30%. Их приложение упрощает платежи, и мы сократили операционные сложности.",
   "Ramin Hasanov": "Рамин Гасанов",
-  "Parking Operator": "Оператор парковки"
+  "Parking Operator": "Оператор парковки",
+  "We pay 80 AZN per employee for parking, likely rising to 180 AZN.": "Мы платим 80 AZN за парковку на сотрудника, вероятно, до 180 AZN.",
+  "The most parking slots are free till 4PM, but operational costs are the same.": "Большинство парковочных мест свободны до 16:00, но операционные расходы остаются прежними.",
+  "Payment delays are an issue—customers get stuck waiting for bank confirmation.": "Задержки платежей — это проблема: клиенты застревают в ожидании подтверждения банка.",  
+  "Only 12 reserved employee parking spots remain; unsure what to do once they're gone.": "Осталось только 12 зарезервированных мест для сотрудников; не знаю, что делать, когда они закончатся."
+
 }

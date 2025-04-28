@@ -40,7 +40,9 @@ const Hero: React.FC = () => {
           )}
         </p>
         <p className="text-md sm:text-lg text-gray-300 mb-6">
-          The ultimate parking app for Baku drivers.
+        {t(
+          'The ultimate parking app for Baku drivers.'
+        )}
         </p>
         <motion.a
           href="#pricing"
