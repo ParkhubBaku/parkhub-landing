@@ -312,4 +312,4 @@ Additional Notes
 Security: The App Engine endpoint is currently publicly accessible. In production, consider adding authentication (e.g., an API key) to the /send-email route.
 Gmail SMTP Limits: Gmail has sending limits (e.g., 500 emails/day). If you expect higher volumes, you might switch to another SMTP provider like SendGrid or Amazon SES later.
 Custom Domain: If you’ve set up a custom domain for your frontend (e.g., parkhub-landing.com), you can also map a custom domain to your App Engine backend for a more professional URL.
-Your app should now be fully deployed with working email functionality! Let me know if you need further assistance.
+Your app should now be fully deployed with working email functionality! Let me know if you need further assistance.# parkhub-landing
