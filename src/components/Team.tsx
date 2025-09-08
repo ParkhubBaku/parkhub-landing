@@ -36,7 +36,7 @@ const Team = () => {
 
         {/* 1 column on xs, 2 on sm, 5 on md+ */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -114,7 +114,7 @@ const Team = () => {
             </p>
           </motion.div>
 
-          {/* Jamal */}
+          {/* Jamal 
           <motion.div
             className="flex flex-col items-center justify-center p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md space-y-4 text-center"
             variants={itemVariants}
@@ -136,7 +136,8 @@ const Team = () => {
             <p className="dark:text-gray-200 text-gray-700">
               {t('Government policy author')}
             </p>
-          </motion.div>
+          </motion.div> 
+          */}
 
           {/* Zakir */}
           <motion.div
