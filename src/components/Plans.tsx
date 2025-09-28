@@ -60,7 +60,7 @@ const Plans = () => {
               {t('Office Employees')}
             </h3>
             <p className="text-2xl font-bold dark:text-[#1653ff] text-gray-900 mb-4">
-              {t('120 AZN/month')}
+              {t('140 AZN/month')}
             </p>
             <p className="dark:text-gray-200 text-gray-700 mb-6">
               {t('8:30 AM - 6:30 PM across all locations.')}
@@ -80,7 +80,7 @@ const Plans = () => {
               {t('Daily Parking Users')}
             </h3>
             <p className="text-2xl font-bold dark:text-[#1653ff] text-gray-900 mb-4">
-              {t('180 AZN/month')}
+              {t('190 AZN/month')}
             </p>
             <p className="dark:text-gray-200 text-gray-700 mb-6">
               {t('16 hours/day, save up to 25%.')}
@@ -100,7 +100,7 @@ const Plans = () => {
               {t('Maximum Plan')}
             </h3>
             <p className="text-2xl font-bold dark:text-[#1653ff] text-gray-900 mb-4">
-              {t('240 AZN/month')}
+              {t('250 AZN/month')}
             </p>
             <p className="dark:text-gray-200 text-gray-700 mb-6">
               {t('24 hours access with insurance and availability info.')}

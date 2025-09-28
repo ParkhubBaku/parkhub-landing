@@ -5,7 +5,7 @@ import property from '../assets/images/brand-logos/pasha_property_logo.svg';
 import malls from '../assets/images/brand-logos/pasha_malls_logo.svg';
 import parqour from '../assets/images/brand-logos/parqour_logo.png';
 import holding from '../assets/images/brand-logos/pasha_holding_logo.png';
-import stripe from '../assets/images/brand-logos/stripe.svg';
+import azparking from '../assets/images/brand-logos/azparking.png';
 import logo from '../assets/logo/logo.png';
 
 const Footer = () => {
@@ -74,6 +74,12 @@ const Footer = () => {
               <img
                 src={malls}
                 alt="Pasha Malls Logo"
+                className="h-8"
+                loading="lazy"
+              />
+                <img
+                src={azparking}
+                alt="Azparking Logo"
                 className="h-8"
                 loading="lazy"
               />
