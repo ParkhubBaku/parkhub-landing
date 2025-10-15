@@ -83,6 +83,15 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode, changeLangu
           >
             {t('FAQ')}
           </a>
+
+          {/* NEW: Terms link */}
+          <a
+            href="#terms"
+            className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors"
+          >
+            {t('Terms and conditions')}
+          </a>
+
           <a
             href="#cta"
             className="bg-[#1653ff] text-white px-4 py-2 rounded-full font-semibold hover:bg-[#9b59d6] transition-colors"
@@ -96,6 +105,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode, changeLangu
           >
             <i className={isDarkMode ? 'bi bi-sun-fill' : 'bi bi-moon-fill'}></i>
           </button>
+
           {/* Language Switcher */}
           <div className="flex space-x-2">
             {languages.map((lang) => (
@@ -191,40 +201,38 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode, changeLangu
               aria-label="Mobile navigation"
               className="flex flex-col max-lg:mt-16 max-lg:gap-6"
             >
-              <a
-                href="#about-us"
-                className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors"
-              >
+              <a href="#about-us" onClick={closeMenu}
+                 className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors">
                 {t('About Us')}
               </a>
-              <a
-                href="#pricing"
-                className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors"
-              >
+              <a href="#pricing" onClick={closeMenu}
+                 className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors">
                 {t('Pricing')}
               </a>
-              <a
-                href="#features"
-                className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors"
-              >
+              <a href="#features" onClick={closeMenu}
+                 className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors">
                 {t('Features')}
               </a>
-              <a
-                href="#contact"
-                className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors"
-              >
+              <a href="#contact" onClick={closeMenu}
+                 className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors">
                 {t('Contact')}
               </a>
-              <a
-                href="#faq"
-                className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors"
-              >
+              <a href="#faq" onClick={closeMenu}
+                 className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors">
                 {t('FAQ')}
               </a>
+
+              {/* NEW: Terms link (mobile) */}
+              <a href="#terms" onClick={closeMenu}
+                 className="text-base font-medium dark:text-gray-300 text-gray-700 dark:hover:text-[#1653ff] hover:text-[#1653ff] transition-colors">
+                {t('Terms and conditions')}
+              </a>
             </nav>
+
             <div className="mb-8">
               <a
                 href="#cta"
+                onClick={closeMenu}
                 className="dark:bg-[#1653ff] bg-gray-100 dark:text-white text-gray-900 px-4 py-2 rounded-full font-semibold dark:hover:bg-[#9b59d6] hover:bg-[#9b59d6] dark:hover:text-white hover:text-white transition-all duration-300 hover:translate-x-2"
               >
                 <span>{t('Get Started')}</span>

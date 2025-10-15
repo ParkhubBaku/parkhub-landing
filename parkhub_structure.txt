@@ -1,0 +1,54 @@
+tree -I 'node_modules|.next|dist|.git|.turbo|.vercel' -L 3 > parkhub_structure.txt
+
+.
+├── eslint.config.mjs
+├── index.html
+├── package-lock.json
+├── package.json
+├── parkhub_structure.txt
+├── parkhub-email-backend
+│   ├── app.yaml
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+├── parkhub-live.pem
+├── postcss.config.js
+├── public
+│   └── assets
+│       └── css
+├── readme.md
+├── src
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── css
+│   │   ├── images
+│   │   ├── logo
+│   │   └── team
+│   ├── components
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── CTA.tsx
+│   │   ├── ErrorBoundary.tsx
+│   │   ├── FAQ.tsx
+│   │   ├── Features.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── HowItWorks.tsx
+│   │   ├── Plans.tsx
+│   │   ├── Team.tsx
+│   │   └── Testimonials.tsx
+│   ├── cross-env
+│   ├── i18n.js
+│   ├── index.tsx
+│   ├── locales
+│   │   ├── az.json
+│   │   ├── en.json
+│   │   └── ru.json
+│   ├── parkhub-landing@1.0.0
+│   └── ThemeContext.js
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.js
+
+13 directories, 37 files

@@ -10,8 +10,9 @@ import Plans from './components/Plans';
 import Team from './components/Team';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
-//import CTA from './components/CTA';
+// import CTA from './components/CTA';
 import FAQ from './components/FAQ';
+import TermsOfUse from './components/TermsOfUse';
 import Footer from './components/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
 
@@ -51,25 +52,29 @@ const App: React.FC = () => {
   return (
     <ErrorBoundary>
       <div className="min-h-screen flex flex-col">
-        {/* Ensure Header's props interface includes 'changeLanguage' */}
-        <Header 
-          isDarkMode={isDarkMode} 
+        {/* Header Section */}
+        <Header
+          isDarkMode={isDarkMode}
           toggleDarkMode={toggleDarkMode}
-          changeLanguage={changeLanguage} 
+          changeLanguage={changeLanguage}
         />
+
+        {/* Main Sections */}
         <main className="flex-grow">
           <Hero />
           <About />
-          {/* Pass required isDarkMode to Features */}
           <Features isDarkMode={isDarkMode} />
           <HowItWorks />
           <Plans />
           <Team />
           <Testimonials />
           <Contact />
-        {/*  <CTA />  */}
+          {/* <CTA /> */}
           <FAQ />
+          <TermsOfUse />
         </main>
+
+        {/* Footer */}
         <Footer />
       </div>
     </ErrorBoundary>
