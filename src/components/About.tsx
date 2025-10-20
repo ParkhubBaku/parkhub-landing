@@ -1,4 +1,4 @@
-// src/components/About.jsx
+// src/components/About.tsx
 import { motion } from 'framer-motion';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -40,25 +40,22 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {/* Left column: Problem + Solution */}
-          <motion.div
-            variants={itemVariants}
-            className="space-y-12"
-          >
+          {/* Left column */}
+          <motion.div variants={itemVariants} className="space-y-12">
+            {/* Intro */}
+            <div className="space-y-6">
+              <p className="dark:text-gray-200 text-gray-800 text-lg leading-relaxed">
+                {t('about.intro')}
+              </p>
+            </div>
+
             {/* The Problem */}
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold dark:text-white text-gray-900">
                 {t('The Problem')}
               </h3>
               <p className="dark:text-gray-200 text-gray-800 text-lg leading-relaxed">
-                {t(
-                  'Parking in Baku is fragmented and expensive. Businesses pay up to 180 AZN per employee, and drivers juggle multiple subscriptions.'
-                )}
-              </p>
-              <p className="dark:text-gray-200 text-gray-800 text-lg leading-relaxed">
-                {t(
-                  'Parking operators face empty slots and payment delays, making operations inefficient.'
-                )}
+                {t('about.problem')}
               </p>
             </div>
 
@@ -68,24 +65,19 @@ const About = () => {
                 {t('Our Solution')}
               </h3>
               <p className="dark:text-gray-200 text-gray-800 text-lg leading-relaxed">
-                {t(
-                  'PARK HUB BAKU offers a unified subscription plan, giving access to all parking locations in Baku with one app.'
-                )}
+                {t('about.solution')}
               </p>
-              <p className="dark:text-gray-200 text-gray-800 text-lg leading-relaxed">
-                {t(
-                  'Employees save money, HR boosts engagement, and parking providers reduce challenges while increasing occupancy.'
-                )}
-              </p>
+
               <motion.a
-                href="#cta"
+                href="#contact"
                 className="inline-block bg-[#1653ff] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#9b59d6] transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t('Download the App')}
+                {t('Contact Us')}
               </motion.a>
-              {/* New “coming soon” text */}
+
+              {/* “coming soon” text (keep if you still want it) */}
               <p className="mt-2 text-sm text-red-500 dark:text-red-400">
                 {t('App is coming soon')}
               </p>

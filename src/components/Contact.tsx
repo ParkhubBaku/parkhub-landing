@@ -67,7 +67,11 @@ const Contact: React.FC = () => {
     }
   
     try {
-      const response = await fetch('https://parkhub-456312.appspot.com/send-email', {
+      // OLD:
+      // const response = await fetch('https://parkhub-456312.appspot.com/send-email', {
+
+      // NEW:
+      const response = await fetch('/.netlify/functions/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
