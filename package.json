@@ -23,6 +23,7 @@
   "author": "Paul",
   "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^8.1.0",
     "framer-motion": "^12.6.3",
     "i18next": "^25.5.2",
     "i18next-browser-languagedetector": "^8.0.4",
@@ -59,16 +60,11 @@
     "prettier": "^3.5.3",
     "vite": "^6.2.5",
     "vitest": "^3.1.1"
-    
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ]
-  },
-  "dependencies": {
-  "@sendgrid/mail": "^8.1.0"
-}
-  
+  }
 }
