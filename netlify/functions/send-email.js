@@ -82,4 +82,8 @@ exports.handler = async (event) => {
       body: JSON.stringify({ ok: false, error: err.message }),
     };
   }
+
+  // Manual test
 };
+
+
