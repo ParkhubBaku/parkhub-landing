@@ -59,11 +59,16 @@
     "prettier": "^3.5.3",
     "vite": "^6.2.5",
     "vitest": "^3.1.1"
+    
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ]
-  }
+  },
+  "dependencies": {
+  "@sendgrid/mail": "^8.1.0"
+}
+  
 }
