@@ -1,84 +1,65 @@
 // netlify/functions/send-email.js
 const sgMail = require('@sendgrid/mail');
 
-exports.handler = async (event) => {
-  // Only allow POST
-  if (event.httpMethod !== 'POST') {
-    return {
-      statusCode: 405,
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ error: 'Method Not Allowed' }),
-    };
-  }
+const { SENDGRID_API_KEY, FROM_EMAIL, REPLY_TO, TO_EMAIL } = process.env;
+if (!SENDGRID_API_KEY || !FROM_EMAIL) {
+  // Let the client know env is missing
+  // (Netlify logs will also show this)
+  exports.handler = async () => ({
+    statusCode: 500,
+    body: JSON.stringify({ ok: false, error: 'Missing SENDGRID_API_KEY or FROM_EMAIL env var' }),
+  });
+} else {
+  sgMail.setApiKey(SENDGRID_API_KEY);
 
-  const apiKey = process.env.SENDGRID_API_KEY;
-  const FROM_EMAIL = process.env.FROM_EMAIL;
-  const REPLY_TO = process.env.REPLY_TO;
+  exports.handler = async (event) => {
+    try {
+      if (event.httpMethod !== 'POST') {
+        return { statusCode: 405, body: 'Method Not Allowed' };
+      }
 
-  if (!apiKey || !FROM_EMAIL || !REPLY_TO) {
-    return {
-      statusCode: 500,
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        error:
-          'Missing SENDGRID_API_KEY, FROM_EMAIL, or REPLY_TO environment variable',
-      }),
-    };
-  }
+      const { name, email, message } = JSON.parse(event.body || '{}');
 
-  let payload;
-  try {
-    payload = JSON.parse(event.body || '{}');
-  } catch {
-    return {
-      statusCode: 400,
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ error: 'Invalid JSON' }),
-    };
-  }
+      if (!name || !email || !message) {
+        return {
+          statusCode: 400,
+          body: JSON.stringify({ ok: false, error: 'Missing required fields: name, email, message' }),
+        };
+      }
 
-  const { name, email, message } = payload;
+      // Where should we send the contact message?
+      // Prefer NETLIFY env TO_EMAIL; fall back to FROM_EMAIL if unset.
+      const toAddress = TO_EMAIL || FROM_EMAIL;
 
-  if (!name || !email || !message) {
-    return {
-      statusCode: 400,
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ error: 'Missing required fields' }),
-    };
-  }
+      const msg = {
+        to: toAddress,                     // where you receive the lead
+        from: FROM_EMAIL,                  // MUST be your authenticated domain (e.g. no-reply@parkhub.az)
+        replyTo: REPLY_TO || email,        // so you can reply directly to the sender
+        subject: `New contact form: ${name}`,
+        text: `From: ${name} <${email}>\n\n${message}`,
+        html: `<p><strong>From:</strong> ${name} &lt;${email}&gt;</p><p>${message}</p>`,
+        // Optional: be explicit that sandbox is off
+        mailSettings: { sandboxMode: { enable: false } },
+      };
 
-  try {
-    sgMail.setApiKey(apiKey);
+      const [res] = await sgMail.send(msg);
 
-    // We send the email TO your REPLY_TO inbox, FROM your authenticated domain address.
-    // Replies will go to the user (their email) via replyTo.
-    const msg = {
-      to: REPLY_TO,
-      from: FROM_EMAIL,
-      subject: `New Contact Form Submission from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong><br/>${String(message).replace(/\n/g, '<br/>')}</p>
-      `,
-      replyTo: { email, name },
-      headers: { 'X-Parkhub-Form': 'contact' },
-    };
-
-    await sgMail.send(msg);
-
-    return {
-      statusCode: 200,
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ ok: true }),
-    };
-  } catch (err) {
-    console.error('SendGrid error:', err?.response?.body || err);
-    return {
-      statusCode: 500,
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ error: 'Failed to send email' }),
-    };
-  }
-};
+      // If SendGrid accepted it, surface IDs for debugging
+      return {
+        statusCode: 200,
+        body: JSON.stringify({
+          ok: true,
+          status: res.statusCode,
+          messageId: res.headers['x-message-id'] || res.headers['x-message-id'.toLowerCase()],
+        }),
+      };
+    } catch (err) {
+      // Make the error visible to the client and Netlify logs
+      const sgErr = err?.response?.body || err?.message || String(err);
+      return {
+        statusCode: 502,
+        body: JSON.stringify({ ok: false, error: sgErr }),
+      };
+    }
+  };
+}
