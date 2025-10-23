@@ -66,7 +66,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode, changeLangu
         {/* Left: Branding */}
         <Link to="/" className="flex items-center min-w-0">
           <img src={logo} alt="ParkHub Logo" className="h-10 w-auto sm:h-12" loading="lazy" />
-          <span className="ml-3 text-xl sm:text-2xl font-semibold dark:text-white text-gray-900 leading-none whitespace-nowrap">
+          <span className="ml-3 text-xl sm:text-2xl font-semibold dark:text-white text-gray-900 leading-none whitespace-nowrap hidden sm:inline">
             {t('ParkHub')}
           </span>
         </Link>
