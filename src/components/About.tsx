@@ -43,14 +43,14 @@ const About = () => {
           {/* Left column */}
           <motion.div variants={itemVariants} className="space-y-12">
             {/* Intro */}
-            <div className="space-y-6">
+            <div className="space-y-6 max-w-prose">
               <p className="dark:text-gray-200 text-gray-800 text-lg leading-relaxed">
                 {t('about.intro')}
               </p>
             </div>
 
             {/* The Problem */}
-            <div className="space-y-6">
+            <div className="space-y-6 max-w-prose">
               <h3 className="text-2xl font-semibold dark:text-white text-gray-900">
                 {t('The Problem')}
               </h3>
@@ -60,7 +60,7 @@ const About = () => {
             </div>
 
             {/* Our Solution */}
-            <div className="space-y-6">
+            <div className="space-y-6 max-w-prose">
               <h3 className="text-2xl font-semibold dark:text-white text-gray-900">
                 {t('Our Solution')}
               </h3>
@@ -70,14 +70,14 @@ const About = () => {
 
               <motion.a
                 href="#contact"
-                className="inline-block bg-[#1653ff] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#9b59d6] transition-colors"
+                className="inline-flex items-center bg-[#1653ff] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#9b59d6] transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 {t('Contact Us')}
               </motion.a>
 
-              {/* “coming soon” text (keep if you still want it) */}
+              {/* Remove this if you no longer need it */}
               <p className="mt-2 text-sm text-red-500 dark:text-red-400">
                 {t('App is coming soon')}
               </p>

@@ -4,7 +4,7 @@
   "Pricing": "Qiymətlər",
   "Features": "Xüsusiyyətlər",
   "Contact": "Əlaqə",
-  "FAQ": "Tez-tez Verilən Suallar",
+  "FAQ": "FAQ",
   "Get Started": "Başla",
   "Find Parking": "Parkinq Tap",
   "Anywhere, Anytime": "Hər Yerdə, Hər Zaman",
@@ -171,6 +171,30 @@
   "terms.governing_p": "Bu Şərtlər Azərbaycan Respublikasının qanunları ilə tənzimlənir. Mübahisələr əvvəlcə qarşılıqlı razılıqla həll olunur; mümkün olmadıqda, Azərbaycan məhkəmələrinin səlahiyyətinə daxildir.",
   "about.intro": "Park Hub, şirkətlərə işçiləri üçün yaxınlıqdakı parkinq yerlərini sabit və sərfəli aylıq ödənişlə təmin edən B2B platformadır. Bundan əlavə, ekosisteminə daxil olan bütün parkinq binalarında mövcud yerlərin hovuzunu eyni ödəniş planı ilə təqdim edir.",
   "about.problem": "Bakıda parkinq parçalanmış və bahadır. Şirkətlər bir işçi üçün 300 AZN-ədək ödəyirlər və sürücülər bir neçə abunəni idarə etməli olurlar. Digər tərəfdən, parkinq operatorları boş yerlər və ödəniş gecikmələri ilə üzləşir ki, bu da əməliyyatları səmərəsiz edir.",
-  "about.solution": "Park Hub Baku vahid abunə planı təklif edir və bir tətbiq vasitəsilə Bakının bütün parkinq məkanlarına çıxış verir. Bu, şirkətlərə iş yerlərinə ən yaxın parkinq yerlərini işçilər üçün sabit və daha əlçatan aylıq ödənişlə təmin etməyə imkan verən innovativ B2B həlldir. Bu model işçilər üçün rahatlığı artırır, parkinq sahiblərinə isə istifadə olunmayan yerlərini səmərəli şəkildə monetizasiya etməyə şərait yaradır. İşçilər pula qənaət edir, HR əməkdaşların motivasiyasını artırır, parkinq təminatçıları isə çətinlikləri azaldaraq doluluğu yüksəldirlər."
+  "about.solution": "Park Hub Baku vahid abunə planı təklif edir və bir tətbiq vasitəsilə Bakının bütün parkinq məkanlarına çıxış verir. Bu, şirkətlərə iş yerlərinə ən yaxın parkinq yerlərini işçilər üçün sabit və daha əlçatan aylıq ödənişlə təmin etməyə imkan verən innovativ B2B həlldir. Bu model işçilər üçün rahatlığı artırır, parkinq sahiblərinə isə istifadə olunmayan yerlərini səmərəli şəkildə monetizasiya etməyə şərait yaradır. İşçilər pula qənaət edir, HR əməkdaşların motivasiyasını artırır, parkinq təminatçıları isə çətinlikləri azaldaraq doluluğu yüksəldirlər.",
+
+  "Privacy Policy": "Məxfilik Siyasəti",
+  "Last updated": "Son yenilənmə",
+
+  "privacy.summary": "Bu Məxfilik Siyasəti PARK HUB BAKU (“Park Hub”) tərəfindən vebsayt və/və ya mobil tətbiqdən istifadə zamanı şəxsi məlumatların necə toplanması, istifadə edilməsi və qorunmasını izah edir. Biz parkinq xidmətlərinin aqreqatoruyuq və parkinqlərə çıxışın verilməsi, abunəliklərin və ödənişlərin idarə olunması məqsədilə məlumatları emal edirik.",
+
+  "privacy.collection_h": "Topladığımız məlumatlar",
+  "privacy.collection_p": "Aşağıdakı məlumatları toplaya bilərik: ad və soyad, e-poçt ünvanı, telefon nömrəsi, nəqliyyat vasitəsinin dövlət nömrə nişanı, ödəniş kartı identifikatoru, IP ünvan və/və ya cihazın geolokasiya məlumatı, eləcə də bizimlə yazışmalarınız. Sayt və tətbiqdən istifadə zamanı tarix/vaxt, sessiyaların müddəti və tezliyi kimi texniki məlumatlar və kukilər (cookies) avtomatik yığılır.",
+
+  "privacy.use_h": "Məlumatlardan necə istifadə edirik",
+  "privacy.use_p": "Məlumatlardan bunlar üçün istifadə edirik: hesabın və abunəliyin yaradılması və idarə edilməsi; parkinqlərə girişin təmin olunması; ödənişlərin emalı və yoxlanması; servis bildirişlərinin və mesajların göndərilməsi; sayt və tətbiqin təkmilləşdirilməsi; fırıldaqçılığın və icazəsiz girişin qarşısının alınması; analitika və yeni funksiyaların işlənməsi; qanunvericilik tələblərinə əməl olunması.",
+
+  "privacy.sharing_h": "Məlumatların ötürülməsi",
+  "privacy.sharing_p": "Xidmətin göstərilməsi üçün zəruri olduqda məlumatlar parkinq operatorlarına, ödəniş provayderlərinə və digər podratçılara ötürülə bilər. Beynəlxalq ötürmə yalnız adekvat mühafizə tədbirləri ilə həyata keçirilir. Qanunla tələb olunduğu hallarda səlahiyyətli orqanlara açıqlama mümkündür.",
+
+  "privacy.security_h": "Məlumatların təhlükəsizliyi",
+  "privacy.security_p": "Məlumatlarınızın icazəsiz giriş, dəyişdirilmə və ya açıqlanmadan qorunması üçün texniki və təşkilati təhlükəsizlik tədbirlərindən (şifrələmə, mühafizə olunan serverlər, məhdudlaşdırılmış giriş) istifadə edirik, mümkün olduqda məlumatları anonimləşdiririk.",
+
+  "privacy.rights_h": "Məlumat subyektinin hüquqları",
+  "privacy.rights_p": "Məlumatlarınıza çıxış, onların düzəldilməsi, silinməsi, emalın məhdudlaşdırılması və razılığın geri götürülməsi hüququnuz var. Hüquqlarınızdan istifadə üçün bizimlə bu ünvandan əlaqə saxlayın: parkhubbaku@gmail.com. Sorğular qanunvericiliyə uyğun olaraq məqbul müddətdə yoxlanılır.",
+
+  "privacy.contact_h": "Əlaqə",
+  "privacy.contact_p": "ParkHub MMC, Port Baku 153, Neftçilər prospekti, Bakı, Azərbaycan. E-poçt: parkhubbaku@gmail.com. Telefon: +994 50 490 32 50."
+
 
 }

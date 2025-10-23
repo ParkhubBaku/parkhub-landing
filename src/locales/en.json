@@ -171,6 +171,31 @@
   "terms.governing_p": "These Terms are governed by the laws of the Republic of Azerbaijan. Disputes shall first be settled amicably; failing that, they fall under the exclusive jurisdiction of Azerbaijani courts.",
   "about.intro": "Park Hub is a B2B platform that provides companies with nearby parking spaces for their employees at a fixed and cost-effective monthly rate. Furthermore, it provides the pool of available slots in the all-parking buildings within its ecosystem by the same payment plan.",
   "about.problem": "Parking in Baku is fragmented and expensive. Businesses pay up to 300 AZN per employee, and drivers juggle multiple subscriptions. On the other hand, parking operators face empty slots and payment delays, making operations inefficient.",
-  "about.solution": "Park Hub Baku offers a unified subscription plan, giving access to all parking locations in Baku with one app. This is an innovative B2B solution that allows companies to secure parking spots closest to their workplaces for employees at a fixed and more affordable monthly fee. This model enhances employee convenience while enabling parking owners to effectively monetize their unused spaces. Employees save money, HR boosts engagement, and parking providers reduce challenges while increasing occupancy."
+  "about.solution": "Park Hub Baku offers a unified subscription plan, giving access to all parking locations in Baku with one app. This is an innovative B2B solution that allows companies to secure parking spots closest to their workplaces for employees at a fixed and more affordable monthly fee. This model enhances employee convenience while enabling parking owners to effectively monetize their unused spaces. Employees save money, HR boosts engagement, and parking providers reduce challenges while increasing occupancy.",
+
+  
+  "Privacy Policy": "Privacy Policy",
+  "Last updated": "Last updated",
+
+  "privacy.summary": "This Privacy Policy explains how PARK HUB BAKU (“Park Hub”) collects, uses, and protects personal data when you use our website and/or mobile app. We are a parking services aggregator and process data to provide access to parking locations, manage subscriptions, and handle payments.",
+
+  "privacy.collection_h": "Data we collect",
+  "privacy.collection_p": "We may collect: first and last name, email address, phone number, vehicle license plate number, payment card identifier, IP address and/or device geolocation, as well as your communications with us. We also automatically collect technical usage data about the site and app (date/time, session length and frequency) and cookies.",
+
+  "privacy.use_h": "How we use data",
+  "privacy.use_p": "We use data to: create and manage your account and subscription; provide access to parking locations; process and verify payments; send service notifications and messages; improve our site and app; prevent fraud and unauthorized access; perform analytics and develop new features; comply with legal obligations.",
+
+  "privacy.sharing_h": "Sharing and disclosure",
+  "privacy.sharing_p": "We may share data with parking operators, payment providers, and other vendors necessary to deliver the service. Cross-border transfers may occur with appropriate safeguards. We may also disclose information when required by applicable law or competent authorities.",
+
+  "privacy.security_h": "Data security",
+  "privacy.security_p": "We implement technical and organizational measures (encryption, secured servers, restricted access) to protect your data from unauthorized access, alteration, or disclosure, and we use anonymization where possible.",
+
+  "privacy.rights_h": "Your rights",
+  "privacy.rights_p": "You have the right to access, correct, delete, restrict processing of your data, and withdraw consent. To exercise your rights, contact us at parkhubbaku@gmail.com. We will review requests within a reasonable time in line with applicable law.",
+
+  "privacy.contact_h": "Contact",
+  "privacy.contact_p": "ParkHub LLC, Port Baku 153, Neftçilər Avenue, Baku, Azerbaijan. Email: parkhubbaku@gmail.com. Phone: +994 50 490 32 50."
+
 
 }
