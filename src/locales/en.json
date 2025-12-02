@@ -172,13 +172,12 @@
   "about.intro": "Park Hub is a B2B platform that provides companies with nearby parking spaces for their employees at a fixed and cost-effective monthly rate. Furthermore, it provides the pool of available slots in the all-parking buildings within its ecosystem by the same payment plan.",
   "about.problem": "Parking in Baku is fragmented and expensive. Businesses pay up to 300 AZN per employee, and drivers juggle multiple subscriptions. On the other hand, parking operators face empty slots and payment delays, making operations inefficient.",
   "about.solution": "Park Hub Baku offers a unified subscription plan, giving access to all parking locations in Baku with one app. This is an innovative B2B solution that allows companies to secure parking spots closest to their workplaces for employees at a fixed and more affordable monthly fee. This model enhances employee convenience while enabling parking owners to effectively monetize their unused spaces. Employees save money, HR boosts engagement, and parking providers reduce challenges while increasing occupancy.",
-
-  
-  "Privacy Policy": "Privacy Policy",
+  "terms.privacy_policy": "Privacy Policy",
+  "qr_code.scan_to_download": "Scan to download",
+  "qr_code.download_description": "Open your camera and scan the QR code to download our app",
+  "qr_code.download_button": "Or click here to download",
   "Last updated": "Last updated",
-
   "privacy.summary": "This Privacy Policy explains how PARK HUB BAKU (“Park Hub”) collects, uses, and protects personal data when you use our website and/or mobile app. We are a parking services aggregator and process data to provide access to parking locations, manage subscriptions, and handle payments.",
-
   "privacy.collection_h": "Data we collect",
   "privacy.collection_p": "We may collect: first and last name, email address, phone number, vehicle license plate number, payment card identifier, IP address and/or device geolocation, as well as your communications with us. We also automatically collect technical usage data about the site and app (date/time, session length and frequency) and cookies.",
 

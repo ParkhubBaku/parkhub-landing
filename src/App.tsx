@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
+import QRCodeCard from './components/QRCodeCard';
 
 import Home from './pages/Home';
 import Terms from './pages/Terms';
@@ -55,6 +56,7 @@ const App: React.FC = () => {
         </main>
 
         <Footer />
+        <QRCodeCard />
       </div>
     </ErrorBoundary>
   );

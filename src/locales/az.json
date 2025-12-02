@@ -167,17 +167,16 @@
   "terms.privacy_p": "Məlumatların qorunması üçün qanuna uyğun təhlükəsizlik tədbirləri tətbiq edirik və onları Xidmətləri idarə və təkmilləşdirmək üçün istifadə edirik. Bildiriş və promo məlumatlarını qəbul etməyə razılıq verirsiniz (tənzimləmək mümkündür).",
   "terms.changes_h": "13. DƏYİŞİKLİKLƏR",
   "terms.changes_p": "Park Hub Baku Xidmətləri və ya Şərtləri dəyişə bilər. Əhəmiyyətli dəyişikliklər tətbiq və ya email ilə bildiriləcək. Xidmətlərdən davam edən istifadə razılıq deməkdir.",
-  "terms.governing_h": "14. QANUNVERİCİLİK VƏ YURİSDİKSİYA",
   "terms.governing_p": "Bu Şərtlər Azərbaycan Respublikasının qanunları ilə tənzimlənir. Mübahisələr əvvəlcə qarşılıqlı razılıqla həll olunur; mümkün olmadıqda, Azərbaycan məhkəmələrinin səlahiyyətinə daxildir.",
   "about.intro": "Park Hub, şirkətlərə işçiləri üçün yaxınlıqdakı parkinq yerlərini sabit və sərfəli aylıq ödənişlə təmin edən B2B platformadır. Bundan əlavə, ekosisteminə daxil olan bütün parkinq binalarında mövcud yerlərin hovuzunu eyni ödəniş planı ilə təqdim edir.",
   "about.problem": "Bakıda parkinq parçalanmış və bahadır. Şirkətlər bir işçi üçün 300 AZN-ədək ödəyirlər və sürücülər bir neçə abunəni idarə etməli olurlar. Digər tərəfdən, parkinq operatorları boş yerlər və ödəniş gecikmələri ilə üzləşir ki, bu da əməliyyatları səmərəsiz edir.",
   "about.solution": "Park Hub Baku vahid abunə planı təklif edir və bir tətbiq vasitəsilə Bakının bütün parkinq məkanlarına çıxış verir. Bu, şirkətlərə iş yerlərinə ən yaxın parkinq yerlərini işçilər üçün sabit və daha əlçatan aylıq ödənişlə təmin etməyə imkan verən innovativ B2B həlldir. Bu model işçilər üçün rahatlığı artırır, parkinq sahiblərinə isə istifadə olunmayan yerlərini səmərəli şəkildə monetizasiya etməyə şərait yaradır. İşçilər pula qənaət edir, HR əməkdaşların motivasiyasını artırır, parkinq təminatçıları isə çətinlikləri azaldaraq doluluğu yüksəldirlər.",
-
-  "Privacy Policy": "Məxfilik Siyasəti",
+  "terms.privacy_policy": "Məxfilik Siyasəti",
+  "qr_code.scan_to_download": "Yükləmək üçün skan edin",
+  "qr_code.download_description": "Kameranızı açın və tətbiqimizi yükləmək üçün QR kodu skan edin",
+  "qr_code.download_button": "Və ya yükləmək üçün buraya vurun",
   "Last updated": "Son yenilənmə",
-
   "privacy.summary": "Bu Məxfilik Siyasəti PARK HUB BAKU (“Park Hub”) tərəfindən vebsayt və/və ya mobil tətbiqdən istifadə zamanı şəxsi məlumatların necə toplanması, istifadə edilməsi və qorunmasını izah edir. Biz parkinq xidmətlərinin aqreqatoruyuq və parkinqlərə çıxışın verilməsi, abunəliklərin və ödənişlərin idarə olunması məqsədilə məlumatları emal edirik.",
-
   "privacy.collection_h": "Topladığımız məlumatlar",
   "privacy.collection_p": "Aşağıdakı məlumatları toplaya bilərik: ad və soyad, e-poçt ünvanı, telefon nömrəsi, nəqliyyat vasitəsinin dövlət nömrə nişanı, ödəniş kartı identifikatoru, IP ünvan və/və ya cihazın geolokasiya məlumatı, eləcə də bizimlə yazışmalarınız. Sayt və tətbiqdən istifadə zamanı tarix/vaxt, sessiyaların müddəti və tezliyi kimi texniki məlumatlar və kukilər (cookies) avtomatik yığılır.",
 
